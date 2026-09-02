@@ -2,3 +2,11 @@
 [data-hook="item-container"] {
   content-visibility: visible;
 }
+
+/* Wix's static HTML sets gallery cards to display:none until its hosted
+   hydration runtime runs. Keep the already-rendered public content visible
+   when hosted outside Wix, such as on GitHub Pages. */
+body:has(.gallery-item-container[data-hook="item-container"]) [data-hook="item-container"] {
+  display: block !important;
+  opacity: 1 !important;
+}
