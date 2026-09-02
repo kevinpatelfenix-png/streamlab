@@ -3,7 +3,7 @@
     document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
       img.setAttribute('loading', 'eager');
     });
-    if (location.pathname.endsWith('/blog.html') || location.pathname.endsWith('/blog')) {
+    if (location.pathname.endsWith('/blog.html') || location.pathname.endsWith('/blog') || location.pathname.endsWith('/games.html') || location.pathname.endsWith('/games')) {
       document.querySelectorAll('[data-hook="item-container"]').forEach(function (item) {
         item.style.setProperty('display', 'block', 'important');
         item.style.setProperty('opacity', '1', 'important');
