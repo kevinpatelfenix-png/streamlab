@@ -8,6 +8,9 @@
         item.style.setProperty('display', 'block', 'important');
         item.style.setProperty('opacity', '1', 'important');
       });
+      document.querySelectorAll('[data-id="c766aef4-6405-4807-97bd-06973044414a"]').forEach(function (item) {
+        item.style.setProperty('display', 'none', 'important');
+      });
     }
   }
   revealStaticWixContent();
