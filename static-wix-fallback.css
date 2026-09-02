@@ -1,0 +1,4 @@
+/* Static GitHub Pages fallback for Wix's client-side gallery hydration. */
+[data-hook="item-container"] {
+  content-visibility: visible;
+}
